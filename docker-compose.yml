@@ -5,3 +5,9 @@ services:
       dockerfile: Dockerfile
     ports:
       - '80:80'
+    deploy:
+      resources:
+        limits:
+          memory: 2G  # Sets a memory limit of 2 GB
+        reservations:
+          memory: 500M  # Optionally reserves at least 500 MB of memory
