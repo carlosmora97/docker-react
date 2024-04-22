@@ -25,5 +25,5 @@ jobs:
           environment_name: React-app-env
           existing_bucket_name: elasticbeanstalk-us-east-2-975050380825
           region: us-east-2
-          version_label: Sample
+          version_label:  ${{ github.sha }}
           deployment_package: deploy.zip
